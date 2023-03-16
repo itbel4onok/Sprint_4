@@ -7,14 +7,17 @@
 </ul>
 
 <h2>Project structure</h2>
-Main/java/ contains 
+Main/java/ contains package 
 <ul>
-<li> Constants values such text/ correct values/ URL links </li> 
-<li> Page objects that are divided by meaning and service pages </li>
+<li> "constants" -> constants values such text/ correct values/ URL links </li> 
+<li> "objects" -> page objects that are divided by meaning and service pages </li>
 </ul>
 
-test/java/ contains
+test/java/ contains tests
 <ul>
-<li> MainPage folder with tests for Main page (status order message/ Question part/ Redirect pages) </li> 
-<li> OrderPage folder with tests for Order process (order happy path/ error messages for invalid field values)</li>
+<li> "MainFunctionTest" -> status order message </li> 
+<li> "QuestionPartTest" -> Q&A section</li>
+<li> "RedirectTest" -> redirect to pages</li> 
+<li> "OrderTest" -> happy path - order</li>
+<li> "OrderFieldErrorsTest" -> error messages for invalid values</li>
 </ul>

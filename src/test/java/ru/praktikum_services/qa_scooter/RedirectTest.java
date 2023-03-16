@@ -1,15 +1,15 @@
-package Scooter.MainPage;
+package ru.praktikum_services.qa_scooter;
 
-import PageObject.MainPage.*;
-import constants.MainPageConst;
-import PageObject.RedirectPages.*;
-import constants.OrderPageConst;
+import ru.praktikum_services.qa_scooter.constants.MainPageConst;
+import ru.praktikum_services.qa_scooter.constants.OrderPageConst;
 import org.junit.After;
 import org.junit.Before;
 import org.junit.Test;
 import org.junit.runner.RunWith;
 import org.junit.runners.Parameterized;
 import org.openqa.selenium.chrome.ChromeDriver;
+import ru.praktikum_services.qa_scooter.objects.main.MainPage;
+import ru.praktikum_services.qa_scooter.objects.YaPage;
 
 
 @RunWith(Parameterized.class)
@@ -23,7 +23,7 @@ public class RedirectTest {
         this.orderElement = orderElement;
     }
 
-    @Parameterized.Parameters
+    @Parameterized.Parameters(name = "Редирект со страницы: {0}")
     public static Object[][] getRedirectData() {
         return new Object[][] {
                 { MainPageConst.MAIN_PAGE },

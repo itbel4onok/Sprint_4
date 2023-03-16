@@ -1,4 +1,4 @@
-package constants;
+package ru.praktikum_services.qa_scooter.constants;
 
 public class TextOfAnswers {
     public static final String QUESTION_ID0 = "Сутки — 400 рублей. Оплата курьеру — " +

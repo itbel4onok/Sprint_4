@@ -1,15 +1,15 @@
-package Scooter.OrderPage;
+package ru.praktikum_services.qa_scooter;
 
-import PageObject.MainPage.*;
-import PageObject.OrderPage.*;
-import constants.OrderFieldErrors;
-import constants.OrderPageConst;
+import ru.praktikum_services.qa_scooter.constants.OrderFieldErrors;
+import ru.praktikum_services.qa_scooter.constants.OrderPageConst;
 import org.junit.After;
 import org.junit.Before;
 import org.junit.Test;
 import org.junit.runner.RunWith;
 import org.junit.runners.Parameterized;
 import org.openqa.selenium.chrome.ChromeDriver;
+import ru.praktikum_services.qa_scooter.objects.main.MainPage;
+import ru.praktikum_services.qa_scooter.objects.order.OrderPageInitiallyForm;
 
 @RunWith(Parameterized.class)
 public class OrderFieldErrorsTest {
@@ -20,7 +20,7 @@ public class OrderFieldErrorsTest {
         this.orderField = orderField;
     }
 
-    @Parameterized.Parameters
+    @Parameterized.Parameters(name = "Сообщение об ошибке: {0}")
     public static Object[][] getOrderField() {
         return new Object[][] {
                 { OrderFieldErrors.ERROR_NAME_FIELD },

@@ -1,6 +1,6 @@
-package PageObject.RedirectPages;
+package ru.praktikum_services.qa_scooter.objects;
 
-import constants.LinksURL;
+import ru.praktikum_services.qa_scooter.constants.LinksURL;
 import org.openqa.selenium.By;
 import org.openqa.selenium.WebDriver;
 import org.openqa.selenium.support.ui.WebDriverWait;

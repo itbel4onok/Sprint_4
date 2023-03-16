@@ -1,8 +1,8 @@
-package constants;
+package ru.praktikum_services.qa_scooter.constants;
 
 public class OrderPageConst {
-    public static final String ORDER_HEADER = "Order button in Header part";
-    public static final String ORDER_MIDDLE = "Order button in Middle part";
+    public static final String ORDER_HEADER = "Order by button in Header part";
+    public static final String ORDER_MIDDLE = "Order by button in Middle part";
     public static final String METRO_ZIL = "ЗИЛ";
     public static final String METRO_SOKOL = "Сокол";
     public static final String SROK_2DAYS = "двое суток";

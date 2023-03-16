@@ -1,6 +1,6 @@
-package PageObject.OrderPage;
+package ru.praktikum_services.qa_scooter.objects.order;
 
-import constants.OrderPageConst;
+import ru.praktikum_services.qa_scooter.constants.OrderPageConst;
 import org.openqa.selenium.By;
 import org.openqa.selenium.JavascriptExecutor;
 import org.openqa.selenium.WebDriver;

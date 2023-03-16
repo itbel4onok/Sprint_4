@@ -1,8 +1,8 @@
-package PageObject.MainPage;
+package ru.praktikum_services.qa_scooter.objects.main;
 
-import constants.LinksURL;
-import constants.MainPageConst;
-import constants.OrderPageConst;
+import ru.praktikum_services.qa_scooter.constants.LinksURL;
+import ru.praktikum_services.qa_scooter.constants.MainPageConst;
+import ru.praktikum_services.qa_scooter.constants.OrderPageConst;
 
 import org.openqa.selenium.By;
 import org.openqa.selenium.JavascriptExecutor;

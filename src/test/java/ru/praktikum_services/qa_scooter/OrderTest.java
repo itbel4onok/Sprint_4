@@ -1,14 +1,15 @@
-package Scooter.OrderPage;
+package ru.praktikum_services.qa_scooter;
 
-import PageObject.MainPage.*;
-import PageObject.OrderPage.*;
-import constants.OrderPageConst;
+import ru.praktikum_services.qa_scooter.constants.OrderPageConst;
 import org.junit.After;
 import org.junit.Before;
 import org.junit.Test;
 import org.junit.runner.RunWith;
 import org.junit.runners.Parameterized;
 import org.openqa.selenium.chrome.ChromeDriver;
+import ru.praktikum_services.qa_scooter.objects.main.MainPage;
+import ru.praktikum_services.qa_scooter.objects.order.OrderPageInitiallyForm;
+import ru.praktikum_services.qa_scooter.objects.order.OrderPageSecondForm;
 
 @RunWith(Parameterized.class)
 public class OrderTest {
@@ -28,7 +29,7 @@ public class OrderTest {
         this.colour = colour;
     }
 
-    @Parameterized.Parameters
+    @Parameterized.Parameters(name = "Заказ через кнопку: {0}")
     public static Object[][] getQuestionData() {
         return new Object[][] {
                 { OrderPageConst.ORDER_HEADER, OrderPageConst.METRO_ZIL, "5",

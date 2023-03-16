@@ -1,10 +1,10 @@
-package Scooter.MainPage;
+package ru.praktikum_services.qa_scooter;
 
-import PageObject.MainPage.*;
 import org.junit.After;
 import org.junit.Before;
 import org.junit.Test;
 import org.openqa.selenium.chrome.ChromeDriver;
+import ru.praktikum_services.qa_scooter.objects.main.MainPage;
 
 public class MainFunctionsTest {
     private final ChromeDriver driver = new ChromeDriver();

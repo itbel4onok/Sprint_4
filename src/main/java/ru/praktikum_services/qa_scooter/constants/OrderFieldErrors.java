@@ -1,4 +1,4 @@
-package constants;
+package ru.praktikum_services.qa_scooter.constants;
 
 public class OrderFieldErrors {
     public static final String ERROR_NAME_FIELD = "Введите корректное имя";

@@ -1,8 +1,8 @@
-package Scooter.MainPage;
+package ru.praktikum_services.qa_scooter;
 
-import PageObject.MainPage.MainPage;
-import PageObject.MainPage.QuestionsPart;
-import constants.TextOfAnswers;
+import ru.praktikum_services.qa_scooter.objects.main.MainPage;
+import ru.praktikum_services.qa_scooter.objects.main.QuestionsPart;
+import ru.praktikum_services.qa_scooter.constants.TextOfAnswers;
 import org.junit.After;
 import org.junit.Before;
 import org.junit.Test;
@@ -21,7 +21,7 @@ public class QuestionPartTest {
         this.expectedAnswerTextForQuestion = expectedAnswerTextForQuestion;
     }
 
-    @Parameterized.Parameters
+    @Parameterized.Parameters(name = "Q&A секция, вопрос №{0}")
     public static Object[][] getQuestionData() {
         return new Object[][] {
                 { 0, TextOfAnswers.QUESTION_ID0},
